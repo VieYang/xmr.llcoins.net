@@ -269,6 +269,7 @@ var cnUtil = (function(initConfig) {
             inlen = Math.floor(input.length / 2);
         }*/
         if (input.length % 2 !== 0 || !this.valid_hex(input)) {
+            alert("Input must hex, len%2 == 0");
             throw "Input invalid";
         }
         //update to use new keccak impl (approx 45x faster)
